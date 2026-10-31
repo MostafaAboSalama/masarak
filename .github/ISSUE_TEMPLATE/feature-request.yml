@@ -1,0 +1,28 @@
+name: اقتراح تحسين أو ميزة
+description: فكرة لتحسين البحث أو الخرائط أو تجربة التعلّم.
+title: '[تحسين]: '
+body:
+- type: markdown
+  attributes:
+    value: شكرًا لمساهمتك في تطوير مسارك. هذا التقرير سيظهر للعامة؛ استخدم البريد للمشكلات التي تتضمن
+      بيانات خاصة.
+- type: textarea
+  id: problem
+  attributes:
+    label: ما المشكلة أو الحاجة؟
+    description: اشرح ما تواجهه أثناء استخدام مسارك.
+  validations:
+    required: true
+- type: textarea
+  id: solution
+  attributes:
+    label: ما التحسين المقترح؟
+    description: اشرح الحل وكيف سيساعد المتعلّم.
+  validations:
+    required: true
+- type: textarea
+  id: alternatives
+  attributes:
+    label: بدائل أو ملاحظات إضافية
+  validations:
+    required: false

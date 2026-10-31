@@ -1,0 +1,48 @@
+name: اقتراح مصدر أو خطة تعليمية
+description: مصدر جديد، شرح بديل، أو تحسين ترتيب موضوعات خريطة.
+title: '[مصدر أو خطة]: '
+body:
+- type: markdown
+  attributes:
+    value: شكرًا لمساهمتك في تطوير مسارك. هذا التقرير سيظهر للعامة؛ استخدم البريد للمشكلات التي تتضمن
+      بيانات خاصة.
+- type: input
+  id: skill
+  attributes:
+    label: المسار أو المهارة
+    description: مثل Python أو Backend أو CS Fundamentals.
+  validations:
+    required: true
+- type: input
+  id: topic
+  attributes:
+    label: الموضوع أو الدرس
+    description: اذكر الاسم الحالي إن كان موجودًا.
+  validations:
+    required: true
+- type: textarea
+  id: resources
+  attributes:
+    label: المصادر المقترحة
+    description: أضف الروابط وأسماء أصحابها. للسلاسل، حدد الأجزاء المطلوبة وترتيبها.
+  validations:
+    required: false
+- type: dropdown
+  id: kind
+  attributes:
+    label: نوع الاقتراح
+    options:
+    - موضوع جديد
+    - شرح بديل لمفهوم موجود
+    - أجزاء مكملة أو مشروع عملي
+    - تحسين ترتيب الخريطة
+    - تصحيح وصف أو متطلب سابق
+  validations:
+    required: true
+- type: textarea
+  id: reason
+  attributes:
+    label: تفاصيل الاقتراح وسبب فائدته
+    description: ما الذي سيضيفه للمتعلّم؟ اذكر اللغة والتكلفة والإصدار إن كانت مهمة.
+  validations:
+    required: true

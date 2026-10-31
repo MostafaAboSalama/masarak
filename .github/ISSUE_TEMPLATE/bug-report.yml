@@ -1,0 +1,49 @@
+name: الإبلاغ عن خطأ
+description: خطأ في المحتوى، رابط لا يعمل، أو مشكلة في استخدام الموقع.
+title: '[خطأ]: '
+body:
+- type: markdown
+  attributes:
+    value: شكرًا لمساهمتك في تطوير مسارك. هذا التقرير سيظهر للعامة؛ استخدم البريد للمشكلات التي تتضمن
+      بيانات خاصة.
+- type: input
+  id: location
+  attributes:
+    label: الصفحة أو المهارة والدرس
+    description: أضف رابط الصفحة إن وُجد.
+  validations:
+    required: true
+- type: textarea
+  id: actual
+  attributes:
+    label: ما الذي حدث؟
+    description: صف الخطأ أو المصدر الذي يحتاج تصحيحًا.
+  validations:
+    required: true
+- type: textarea
+  id: expected
+  attributes:
+    label: ما النتيجة المتوقعة؟
+  validations:
+    required: true
+- type: textarea
+  id: steps
+  attributes:
+    label: خطوات إعادة المشكلة
+    description: للمشكلات الوظيفية، اذكر الخطوات بالترتيب.
+  validations:
+    required: false
+- type: input
+  id: environment
+  attributes:
+    label: الجهاز والمتصفح
+    description: مثل Firefox على Linux Mint أو Chrome على Android.
+  validations:
+    required: false
+- type: textarea
+  id: context
+  attributes:
+    label: معلومات أو صور إضافية
+    description: إن أرفقت صورة، أخفِ أي بيانات خاصة أولًا.
+  validations:
+    required: false
